@@ -1,6 +1,7 @@
 package com.huangdeyi.distributed.jms;
 
 import com.huangdeyi.distributed.Provider;
+import com.huangdeyi.distributed.userservice.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +15,7 @@ import javax.jms.TextMessage;
 public class SpringJmsListener implements MessageListener {
     @Autowired
     private Provider provider;
+
 
     public void onMessage(Message message) {
         try {
