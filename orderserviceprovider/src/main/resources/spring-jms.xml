@@ -45,6 +45,7 @@
         </property>
     </bean>
 
+    <!--配置默认消息接收监听器容器-->
     <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
         <property name="connectionFactory" ref="connectionFactory"/>
         <property name="destination" ref="destination"/>

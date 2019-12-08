@@ -16,7 +16,6 @@ public class SpringJmsListener implements MessageListener {
     @Autowired
     private Provider provider;
 
-
     public void onMessage(Message message) {
         try {
              provider.maybePlaceOrder(message);
