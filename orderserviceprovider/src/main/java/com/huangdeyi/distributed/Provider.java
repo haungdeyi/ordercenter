@@ -18,7 +18,7 @@ public class Provider implements OrderService {
         System.out.println("下单信息:" + request.getParams());
         OrderServiceResponse response = new OrderServiceResponse();
         response.setState("666");
-        response.setData("翠花，终于等到你!");
+        response.setData("翠花来了，终于等到你!");
         return response;
     }
 
